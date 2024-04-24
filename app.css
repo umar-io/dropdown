@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    background-color: greenyellow;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+header nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    padding: 15 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+button img{
+    width: 25px;
+    transition: all 0.5s ease;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+.viewEffectResult{
+    width: 100%;
+    height: 0px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 50px;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.viewEffectResult span {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+    transition: 0.5s ease-in-out;
+}
+
+span a {
+    color: black;
+    font-size: 16px;
+}
+/* utility */
+.showEffect{
+    opacity: 1;
+    height: 250px;
+    transition: 0.5s ease-in-out;
+}
+
+.rotateEffect{
+    transform: rotate(180deg);
+}
